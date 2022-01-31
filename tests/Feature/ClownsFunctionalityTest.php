@@ -32,7 +32,7 @@ class ClownsFunctionalityTest extends TestCase
      */
     public function test_clown_view_post_success()
     {
-        $response = $this->call('POST', '/clown', ['name' => 'Graham "The Man" Vickers']);
+        $response = $this->call('POST', 'clowns.store', ['name' => 'Graham "The Man" Vickers']);
         
         $this->assertEquals(201, $response->status());
 

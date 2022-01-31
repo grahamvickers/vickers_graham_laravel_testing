@@ -26,7 +26,7 @@ class ClownsFunctionalityTest extends TestCase
 
     use RefreshDatabase;
     /**
-     * Testing that users can create/post a clown 
+     * Testing that users can post clown data
      *
      * @return void
      */
@@ -34,7 +34,7 @@ class ClownsFunctionalityTest extends TestCase
     {
         $response = $this->call('POST', '/clown', ['name' => 'Graham "The Man" Vickers']);
         
-        $this->assertEquals(404, $response->status());
+        $this->assertEquals(201, $response->status());
 
     }
 }

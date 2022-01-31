@@ -1,0 +1,11 @@
+.accordion-item {
+    .header {
+        cursor:pointer;
+    }
+
+    &:not(.active) {
+        .content {
+            display:none;
+        }
+    }
+}

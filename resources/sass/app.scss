@@ -1,0 +1,13 @@
+@import "partials/fonts";
+@import "partials/layouts";
+@import "partials/header";
+
+// Home page styles
+@import "pages/home/intro";
+@import "pages/home/items";
+
+// Rollercoaster page styles
+@import "pages/rollercoasters/accordion";
+
+// Arcade page styles
+@import "pages/arcade/games";
